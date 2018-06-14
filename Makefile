@@ -15,6 +15,7 @@ clean:
 
 clean-log:
 	sudo rm -f /var/startup-log
+	sudo touch /var/startup-log
 
 enable:
 	sh add-logging.sh

@@ -8,7 +8,7 @@ unsigned long long rdtscl() {
 
 int main(int argc, char* argv[]) {
   unsigned long long t = rdtscl();
-  printf("%lld\n", t);
+//  printf("%lld\n", t);
 
   if (argc == 2) {
     FILE* log = fopen("/var/startup-log", "a");
@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
       fprintf(log, "%s, %lld\n", argv[1], t);
       fclose(log);
     }
-    return log ? 0 : 1;
+//    return log ? 0 : 1;
   }
   return 0;
 }
